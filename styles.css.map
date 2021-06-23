@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AASA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,IAAI;CACd",
+    "mappings": "ASAA,AAAA,WAAW,CAAA;EPCP,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAClB;COFC",
     "sources": [
         "styles.scss",
         "sass/utils/_variables.scss",
@@ -10,7 +10,8 @@
         "sass/pages/_menugoûts.scss",
         "sass/pages/_menudélices.scss",
         "sass/pages/_menuenchantée.scss",
-        "sass/components/buttons.scss"
+        "sass/components/buttons.scss",
+        "sass/components/_logo.scss"
     ],
     "names": [],
     "file": "styles.css"
