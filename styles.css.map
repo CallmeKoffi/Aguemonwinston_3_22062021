@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AASA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "styles.scss",
+        "sass/utils/_variables.scss",
+        "sass/utils/_mixins.scss",
+        "sass/pages/_welcomepage.scss",
+        "sass/pages/_menufr.scss",
+        "sass/pages/_menugoûts.scss",
+        "sass/pages/_menudélices.scss",
+        "sass/pages/_menuenchantée.scss",
+        "sass/components/buttons.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

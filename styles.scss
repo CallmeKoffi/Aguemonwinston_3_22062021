@@ -1,0 +1,13 @@
+@import "./sass/utils/variables";
+@import "./sass/utils/mixins";
+@import "./sass/pages/welcomepage";
+@import "./sass/pages/menufr";
+@import "./sass/pages/menugoûts";
+@import "./sass/pages/menudélices";
+@import "./sass/pages/menuenchantée";
+@import "./sass/components/buttons.scss";
+
+body{
+    width: 100%;
+}
+
