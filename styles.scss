@@ -1,11 +1,14 @@
+@import "./sass/base/display";
 @import "./sass/utils/variables";
 @import "./sass/utils/mixins";
+@import "./sass/components/buttons";
+@import "./sass/components/logo";
+@import "./sass/components/images";
 @import "./sass/pages/welcomepage";
 @import "./sass/pages/menufr";
 @import "./sass/pages/menugoûts";
 @import "./sass/pages/menudélices";
 @import "./sass/pages/menuenchantée";
-@import "./sass/components/buttons.scss";
-@import "./sass/components/logo";
+
 
 
