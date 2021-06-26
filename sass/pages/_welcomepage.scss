@@ -2,16 +2,38 @@ section{
     &.localisation__city{
        display: flex;
        justify-content:center;
-       background-color: $colorgrey;
+       background-color: darken($colorgrey, 10%) ;
        padding:0.5rem 0;
        margin-top: 0.5rem;
-       box-shadow: 0px -5px #f2f2f2b4;
+       box-shadow: 0px -5px darken($colorgrey, 20%);
        
     }
     &.presentation__site{
         padding: 2rem;
         text-align: center;
-        background-color: #F2F2F2;
+        background-color: $colorgrey;
         
     }
+   
+}
+
+div.functionality{
+    &__instruction{
+        border-radius: 50px;
+        background-color: $colorgrey;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem 1rem 1.5rem 0;
+        &.active{
+            background-color: lighten($primarycolor, 35%)
+        }
+    }
+    
+}
+
+span{
+    background-color: $primarycolor;
+    border-radius: 10rem;
+    padding: 0 5px;
+    margin-right: 1rem;
+    color: #fff;
 }

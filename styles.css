@@ -1,5 +1,5 @@
 body {
-  font-family: "Shrikhand", cursive, "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, "Shrikhand", cursive;
   margin: 1rem 0 0 0;
   width: 100%;
 }
@@ -14,10 +14,6 @@ h1, h2, h4, p, li {
 
 h3 {
   font-family: "Shrikhand", cursive;
-}
-
-section.functionality {
-  background-color: #fff;
 }
 
 .btn {
@@ -50,6 +46,14 @@ img.imagecard {
      object-fit: cover;
 }
 
+i.fas {
+  padding-right: 1.5rem;
+}
+
+i.fas.fa-store::before {
+  color: #9356DC;
+}
+
 section.localisation__city {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,16 +61,35 @@ section.localisation__city {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   padding: 0.5rem 0;
   margin-top: 0.5rem;
-  -webkit-box-shadow: 0px -5px #f2f2f2b4;
-          box-shadow: 0px -5px #f2f2f2b4;
+  -webkit-box-shadow: 0px -5px #c3c3c3;
+          box-shadow: 0px -5px #c3c3c3;
 }
 
 section.presentation__site {
   padding: 2rem;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #f6f6f6;
+}
+
+div.functionality__instruction {
+  border-radius: 50px;
+  background-color: #f6f6f6;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1rem 1.5rem 0;
+}
+
+div.functionality__instruction.active {
+  background-color: #f2eafb;
+}
+
+span {
+  background-color: #9356DC;
+  border-radius: 10rem;
+  padding: 0 5px;
+  margin-right: 1rem;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
