@@ -1,3 +1,7 @@
 .logo__head{
-    @include logo;
+    @include logohead;
+}
+
+.logo__footer{
+    @include logofooter;
 }

@@ -1,4 +1,3 @@
-img .imagecard{
-    object-fit: cover;
-    width: 90%;
+img.imagecard{
+    @include imagecard;
 }
