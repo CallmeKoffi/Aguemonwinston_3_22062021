@@ -23,3 +23,7 @@
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
+@mixin curvemargin {
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+}

@@ -2,17 +2,17 @@ section {
   &.localisation__city {
     display: flex;
     justify-content: center;
-    background-color: darken($colorgrey, 10%);
+    background-color: darken($colorgrey, 5%);
     padding: 0.5rem 0;
     margin-top: 0.5rem;
-    box-shadow: 0px -5px darken($colorgrey, 20%);
+    box-shadow: 0px -5px darken($colorgrey, 15%);
   }
   &.presentation__site {
     padding: 2rem;
     text-align: center;
     background-color: $colorgrey;
   }
-  &.card {
+  &.greyarea {
     background-color: $colorgrey;
   }
 }
@@ -20,26 +20,30 @@ section {
 div {
   &.functionality {
     &__instruction {
-      border-radius: 50px;
+      @include curvemargin;
       background-color: $colorgrey;
-      margin-bottom: 1.5rem;
       padding: 1.5rem 1rem 1.5rem 0;
+      font-weight: bold;
       &.active {
         background-color: lighten($primarycolor, 35%);
       }
     }
-
-    
   }
 
-  &.card__restaurant {
-    background-color: #fff;
-    border-radius: 50px;
-   
-    &--info{
+  &.card {
+    margin: 3rem 1rem 0 1rem;
+    padding: 1rem 0;
+    &__restaurant {
+      @include curvemargin;
+      background-color: #fff;
+
+      &--info {
         display: flex;
         justify-content: space-between;
-        align-items:center ;
+        align-items: center;
+        padding: 0 1rem;
+        
+      }
     }
   }
 }
@@ -55,4 +59,15 @@ span {
 .card,
 .functionality {
   @extend %marginbloc;
+}
+p.card{
+    position: relative;
+    &__new{
+        background-color: turquoise;
+        width: 20%;
+        padding: 0.5rem;
+        position: absolute;
+        top: 820px;
+        left: 250px;
+    }
 }

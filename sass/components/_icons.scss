@@ -4,6 +4,13 @@ i.fas{
    &.fa-store::before{
     color: $primarycolor;
 
-   }  
 
+   }  
+   &.fa-arrow-left:before{
+      margin-left: 1rem;
+   }
+}
+i.far{
+   font-size: 2rem;
+   
 }
