@@ -1,11 +1,12 @@
+.card,
+.functionality {
+  margin: 0 1rem;
+}
+
 body {
   font-family: "Roboto", sans-serif, "Shrikhand", cursive;
   margin: 1rem 0 0 0;
   width: 100%;
-}
-
-main {
-  margin: 0 1rem;
 }
 
 h1, h2, h4, p, li {
@@ -74,6 +75,10 @@ section.presentation__site {
   background-color: #f6f6f6;
 }
 
+section.card {
+  background-color: #f6f6f6;
+}
+
 div.functionality__instruction {
   border-radius: 50px;
   background-color: #f6f6f6;
@@ -83,6 +88,23 @@ div.functionality__instruction {
 
 div.functionality__instruction.active {
   background-color: #f2eafb;
+}
+
+div.card__restaurant {
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+div.card__restaurant--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 span {
