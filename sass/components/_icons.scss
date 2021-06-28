@@ -6,11 +6,13 @@ i.fas{
 
 
    }  
-   &.fa-arrow-left:before{
+   &.fa-arrow-left{
       margin-left: 1rem;
+      padding-right: 0;
    }
 }
 i.far{
-   font-size: 2rem;
+   font-size: 1.5rem;
+   font-weight:100;
    
 }

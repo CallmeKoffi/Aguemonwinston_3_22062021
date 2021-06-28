@@ -7,23 +7,9 @@ body {
   margin:1rem 0 0 0;
   width: 100%;
 }
-
-h1 ,h2 ,h4 ,p ,li {
-  font-family: "Roboto", sans-serif;
-  
+section{
+  background-color: $colorgrey;
 }
-
-h3{
-  font-family: "Shrikhand", cursive;
-}
-h4{
-  margin-bottom: 0.5rem;
-}
-p{
-  margin-top:0.5rem;
-  
-}
-
 footer{
   background-color: #353535;
   padding-top: 1rem;
@@ -39,6 +25,24 @@ footer{
   }
   
 }
+
+h1 ,h2 ,h4 ,p ,li {
+  font-family: "Roboto", sans-serif;
+  
+}
+
+h3{
+  font-family: "Shrikhand", cursive;
+}
+h4{
+  margin-bottom: 0.5rem;
+}
+p{
+  margin-top:0;
+  
+}
+
+
 a{
   text-decoration: none;
 }

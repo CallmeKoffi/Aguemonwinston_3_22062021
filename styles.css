@@ -9,20 +9,8 @@ body {
   width: 100%;
 }
 
-h1, h2, h4, p, li {
-  font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-family: "Shrikhand", cursive;
-}
-
-h4 {
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-top: 0.5rem;
+section {
+  background-color: #e9e9e9;
 }
 
 footer {
@@ -40,6 +28,22 @@ footer ul {
 footer ul li {
   padding-bottom: 1rem;
   font-weight: bold;
+}
+
+h1, h2, h4, p, li {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
 }
 
 a {
@@ -69,12 +73,22 @@ a {
   color: #fff;
 }
 
-img.imagecard {
+img.imagecard__welcome {
   width: 100%;
   height: 12rem;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+img.imagecard__menu {
+  width: 100%;
+  height: 15rem;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+  margin-top: 1rem;
 }
 
 i.fas {
@@ -85,12 +99,14 @@ i.fas.fa-store::before {
   color: #9356DC;
 }
 
-i.fas.fa-arrow-left:before {
+i.fas.fa-arrow-left {
   margin-left: 1rem;
+  padding-right: 0;
 }
 
 i.far {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 section.localisation__city {
@@ -110,11 +126,10 @@ section.localisation__city {
 section.presentation__site {
   padding: 2rem;
   text-align: center;
-  background-color: #e9e9e9;
 }
 
-section.greyarea {
-  background-color: #e9e9e9;
+section.nogrey {
+  background-color: #fff;
 }
 
 div.functionality__instruction {
@@ -174,7 +189,39 @@ p.card__new {
   left: 250px;
 }
 
-.header__menu {
-  display: block;
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__dish {
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  padding: 0 1rem 0 0.5rem;
+}
+
+.menu__dish--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */

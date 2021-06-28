@@ -10,17 +10,17 @@ section {
   &.presentation__site {
     padding: 2rem;
     text-align: center;
-    background-color: $colorgrey;
   }
-  &.greyarea {
-    background-color: $colorgrey;
+  &.nogrey{
+    background-color: #fff;
   }
+  
 }
 
 div {
   &.functionality {
     &__instruction {
-      @include curvemargin;
+      @include curvemargin();
       background-color: $colorgrey;
       padding: 1.5rem 1rem 1.5rem 0;
       font-weight: bold;
@@ -34,7 +34,7 @@ div {
     margin: 3rem 1rem 0 1rem;
     padding: 1rem 0;
     &__restaurant {
-      @include curvemargin;
+      @include curvemargin();
       background-color: #fff;
 
       &--info {

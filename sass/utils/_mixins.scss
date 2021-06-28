@@ -8,22 +8,23 @@
     margin-left: 1.5rem;
 
 }
-@mixin button {
+@mixin button($widht) {
     border-radius: 50px;
     background-color: $secondcolor;
     padding: 1rem 1.2rem;
     border: none;
     color: #FFF;
     background: linear-gradient($secondcolor, $primarycolor);
-    width: 70%;
+    width: $widht;
 }
-@mixin imagecard {
-    width: 100%;
-    height: 12rem;
+@mixin imagecard ($width, $height) {
+    width: $width;
+    height: $height;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
-@mixin curvemargin {
-    border-radius: 50px;
+
+@mixin curvemargin($radius:50px) {
+    border-radius: $radius;
     margin-bottom: 1.5rem;
 }
