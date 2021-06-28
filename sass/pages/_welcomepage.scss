@@ -36,7 +36,7 @@ div {
     &__restaurant {
       @include curvemargin();
       background-color: #fff;
-
+      box-shadow: $shadow;
       &--info {
         display: flex;
         justify-content: space-between;

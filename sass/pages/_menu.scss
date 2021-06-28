@@ -19,6 +19,7 @@
         @include curvemargin(10px);
         background-color: #fff;
         padding: 0 1rem 0 0.5rem;
+        box-shadow: $shadow;
         &:hover{
             cursor: pointer;
         }

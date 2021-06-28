@@ -1,12 +1,18 @@
 .btn{
     &__welcome{
         @include button();
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 5px 5px lighten(black, 20%);
+            
+        }
     }
     &__menu{
         @include button(50%);
         @include logohead;
         &:hover{
             cursor: pointer;
+            box-shadow: 0px 5px 5px lighten(black, 20%);
         }
     }
       

@@ -14,8 +14,10 @@
     padding: 1rem 1.2rem;
     border: none;
     color: #FFF;
-    background: linear-gradient($secondcolor, $primarycolor);
+    background: $linearGradient;
     width: $widht;
+    box-shadow: $shadow;
+
 }
 @mixin imagecard ($width, $height) {
     width: $width;
