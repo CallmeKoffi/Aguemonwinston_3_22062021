@@ -8,7 +8,7 @@
     margin-left: 1.5rem;
 
 }
-@mixin button($widht) {
+@mixin button($widht:70%) {
     border-radius: 50px;
     background-color: $secondcolor;
     padding: 1rem 1.2rem;

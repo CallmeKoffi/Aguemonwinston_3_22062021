@@ -1,5 +1,5 @@
 .card,
-.functionality {
+.functionality, .menu__list {
   margin: 0 1rem;
 }
 
@@ -36,6 +36,7 @@ h1, h2, h4, p, li {
 
 h3 {
   font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -50,7 +51,7 @@ a {
   text-decoration: none;
 }
 
-.btn {
+.btn__welcome {
   border-radius: 50px;
   background-color: #FF79DA;
   padding: 1rem 1.2rem;
@@ -59,6 +60,24 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   width: 70%;
+}
+
+.btn__menu {
+  border-radius: 50px;
+  background-color: #FF79DA;
+  padding: 1rem 1.2rem;
+  border: none;
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn__menu:hover {
+  cursor: pointer;
 }
 
 .logo__head {
@@ -198,22 +217,32 @@ p.card__new {
           align-items: center;
 }
 
+.menu__curve {
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 2rem;
+}
+
 .menu__restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .menu__dish {
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 1.5rem;
   background-color: #fff;
   padding: 0 1rem 0 0.5rem;
+}
+
+.menu__dish:hover {
+  cursor: pointer;
 }
 
 .menu__dish--info {
@@ -223,5 +252,10 @@ p.card__new {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.menu__category {
+  border-bottom: 2px solid green;
+  width: 10%;
 }
 /*# sourceMappingURL=styles.css.map */

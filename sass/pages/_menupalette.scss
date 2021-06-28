@@ -3,18 +3,32 @@
         display: flex;
         align-items: center;
     }
+    &__curve{
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 2rem
+    }
+    &__list{
+        @extend %marginbloc;
+    }
     &__restaurant{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     &__dish{
-        @include curvemargin(20px);
+        @include curvemargin(10px);
         background-color: #fff;
         padding: 0 1rem 0 0.5rem;
+        &:hover{
+            cursor: pointer;
+        }
         &--info{
             display: flex;
             justify-content: space-between;
         }
+    }
+    &__category{
+        border-bottom: 2px solid green;
+        width: 10%;
     }
 }

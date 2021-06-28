@@ -1,4 +1,13 @@
 .btn{
-    @include button(70%);
+    &__welcome{
+        @include button();
+    }
+    &__menu{
+        @include button(50%);
+        @include logohead;
+        &:hover{
+            cursor: pointer;
+        }
+    }
       
 }
