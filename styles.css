@@ -1,6 +1,5 @@
-.card,
-.functionality, .menu__list {
-  margin: 0 1rem;
+section .functionality, section .card, .menu__list {
+  margin: 2rem 1rem 0 1rem;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
 
 section {
   background-color: #e9e9e9;
+  padding-top: 1rem;
 }
 
 footer {
@@ -92,6 +92,21 @@ a {
           box-shadow: 0px 5px 5px #333333;
 }
 
+.btn__save {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  border: none;
+}
+
+.btn__save:hover {
+  cursor: pointer;
+  -webkit-transform: scaleY(2);
+          transform: scaleY(2);
+  background-color: #99E2D0;
+}
+
 .logo__head {
   display: block;
   margin-left: auto;
@@ -101,7 +116,7 @@ a {
 .logo__footer {
   width: 6rem;
   margin-left: 1.5rem;
-  color: #fff;
+  fill: #fff;
 }
 
 img.imagecard__welcome {
@@ -140,6 +155,104 @@ i.far {
   font-weight: 100;
 }
 
+@-webkit-keyframes animspin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animspin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opacitywelcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacitywelcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes movedish {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes movedish {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.loader {
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  border-left: 16px solid black;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: animspin 2s linear;
+  animation: animspin 2s linear;
+  position: fixed;
+  -webkit-animation-duration: 2300ms;
+          animation-duration: 2300ms;
+  pointer-events: none;
+  opacity: 0;
+  content: "";
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader__welcome {
+  -webkit-animation: opacitywelcome 5500ms;
+          animation: opacitywelcome 5500ms;
+}
+
 section.localisation__city {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,7 +276,15 @@ section.nogrey {
   background-color: #fff;
 }
 
-div.functionality__instruction {
+section .functionality span {
+  background-color: #9356DC;
+  border-radius: 10rem;
+  padding: 0 5px;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+section .functionality__instruction {
   border-radius: 50px;
   margin-bottom: 1.5rem;
   background-color: #e9e9e9;
@@ -171,16 +292,28 @@ div.functionality__instruction {
   font-weight: bold;
 }
 
-div.functionality__instruction.active {
+section .functionality__instruction.active {
   background-color: #f2eafb;
 }
 
-div.card {
-  margin: 3rem 1rem 0 1rem;
-  padding: 1rem 0;
+section .main h2 {
+  padding-left: 1.5rem;
 }
 
-div.card__restaurant {
+section .card {
+  position: relative;
+}
+
+section .card .card__new {
+  background-color: #99E2D0;
+  width: 20%;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+section .card__restaurant {
   border-radius: 50px;
   margin-bottom: 1.5rem;
   background-color: #fff;
@@ -188,7 +321,7 @@ div.card__restaurant {
           box-shadow: 0px 5px 5px black;
 }
 
-div.card__restaurant--info {
+section .card__restaurant--info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,27 +334,6 @@ div.card__restaurant--info {
   padding: 0 1rem;
 }
 
-span {
-  background-color: #9356DC;
-  border-radius: 10rem;
-  padding: 0 5px;
-  margin-right: 1rem;
-  color: #fff;
-}
-
-p.card {
-  position: relative;
-}
-
-p.card__new {
-  background-color: turquoise;
-  width: 20%;
-  padding: 0.5rem;
-  position: absolute;
-  top: 820px;
-  left: 250px;
-}
-
 .menu__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,7 +344,7 @@ p.card__new {
 }
 
 .menu__curve {
-  border-radius: 20px 20px 0 0;
+  border-radius: 50px 50px 0 0;
   padding-bottom: 2rem;
 }
 
@@ -255,10 +367,16 @@ p.card__new {
   padding: 0 1rem 0 0.5rem;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
+  position: relative;
+  -webkit-animation: movedish 2s ease-in-out 200ms 1 normal both;
+          animation: movedish 2s ease-in-out 200ms 1 normal both;
 }
 
-.menu__dish:hover {
+.menu__dish:hover::after {
   cursor: pointer;
+  content: "fas fa-check";
+  background-color: #99E2D0;
+  position: absolute;
 }
 
 .menu__dish--info {

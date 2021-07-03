@@ -1,3 +1,28 @@
+.loader{
+  border-radius: 50%;
+    border-top: 16px solid $primarycolor;
+    border-right: 16px solid $secondcolor;
+    border-bottom: 16px solid $thirdcolor;
+    border-left: 16px solid black;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: animspin 2s linear;
+    animation: animspin 2s linear;
+    position: fixed;
+    animation-duration: 2300ms;
+    pointer-events: none;
+    opacity: 0;
+    content: "";
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  &__welcome{
+    animation:opacitywelcome 5500ms ;
+  }
+}
+
 section {
   &.localisation__city {
     display: flex;
@@ -17,8 +42,17 @@ section {
   
 }
 
-div {
-  &.functionality {
+section{
+
+  .functionality {
+    @extend %marginbloc;
+    & span {
+      background-color: $primarycolor;
+      border-radius: 10rem;
+      padding: 0 5px;
+      margin-right: 1rem;
+      color: #fff;
+    }
     &__instruction {
       @include curvemargin();
       background-color: $colorgrey;
@@ -29,10 +63,24 @@ div {
       }
     }
   }
-
-  &.card {
-    margin: 3rem 1rem 0 1rem;
-    padding: 1rem 0;
+  .main{
+    & h2{
+      padding-left: 1.5rem
+    }
+    
+  }
+  .card {
+    
+    @extend %marginbloc;
+    position: relative;
+    .card__new{
+        background-color:$thirdcolor;
+        width: 20%;
+        padding: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }    
     &__restaurant {
       @include curvemargin();
       background-color: #fff;
@@ -48,26 +96,5 @@ div {
   }
 }
 
-span {
-  background-color: $primarycolor;
-  border-radius: 10rem;
-  padding: 0 5px;
-  margin-right: 1rem;
-  color: #fff;
-}
 
-.card,
-.functionality {
-  @extend %marginbloc;
-}
-p.card{
-    position: relative;
-    &__new{
-        background-color: turquoise;
-        width: 20%;
-        padding: 0.5rem;
-        position: absolute;
-        top: 820px;
-        left: 250px;
-    }
-}
+

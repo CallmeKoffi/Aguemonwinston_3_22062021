@@ -1,0 +1,29 @@
+@keyframes animspin {
+    0% { transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% { transform: rotate(360deg); 
+           opacity: 0;
+    }
+}
+
+@keyframes opacitywelcome{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes movedish{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

@@ -1,14 +1,17 @@
+
 .menu{
     &__header{
         display: flex;
         align-items: center;
     }
     &__curve{
-        border-radius: 20px 20px 0 0;
-        padding-bottom: 2rem
+        border-radius: 50px 50px 0 0;
+        padding-bottom: 2rem;
+        
     }
     &__list{
         @extend %marginbloc;
+        
     }
     &__restaurant{
         display: flex;
@@ -20,8 +23,13 @@
         background-color: #fff;
         padding: 0 1rem 0 0.5rem;
         box-shadow: $shadow;
-        &:hover{
+        position: relative;
+        animation: movedish 2s ease-in-out 200ms 1 normal both;
+        &:hover::after{
             cursor: pointer;
+            content: "fas fa-check";
+            background-color: $thirdcolor;
+            position: absolute;
         }
         &--info{
             display: flex;
