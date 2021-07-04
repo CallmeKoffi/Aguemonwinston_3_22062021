@@ -16,13 +16,15 @@
         }
     }
     &__save{
-        transition: all 300ms;
-        transform: scaleY(1) ;
-        border:none ;
+       
         &:hover{
             cursor: pointer; 
-            transform: scaleY(2) ;
-            background-color: $thirdcolor;
+            background: $linearGradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial;
+            opacity: 1;
+           
         }
     }
       

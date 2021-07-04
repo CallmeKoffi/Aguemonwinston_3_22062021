@@ -3,7 +3,7 @@ img.imagecard{
         @include imagecard (100%, 12rem);
 }
     &__menu{
-        @include imagecard (100%, 15rem);
+        @include imagecard (100%, 16rem);
         border-radius: 0;
         margin-top: 1rem;
     }
