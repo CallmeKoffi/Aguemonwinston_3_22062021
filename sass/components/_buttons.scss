@@ -16,14 +16,23 @@
         }
     }
     &__save{
-       
-        &:hover{
+        & .fas{
+            color: #d480d4;
+            position: absolute;
+            transform: scale(0);
+            
+        }
+        & .far{
+             position: absolute;
+        }
+        &:hover .fas{
             cursor: pointer; 
-            background: $linearGradient;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: initial;
-            opacity: 1;
+            transform-origin: bottom;
+            transition: transform 1000ms;
+            transform: scale(1);
+            
+
+            
            
         }
     }

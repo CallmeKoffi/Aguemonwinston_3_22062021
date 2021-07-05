@@ -1,44 +1,71 @@
-
-.menu{
-    &__header{
-        display: flex;
-        align-items: center;
-    }
-    &__curve{
-        border-radius: 50px 50px 0 0;
-        padding-bottom: 2rem;
-        position: relative;
-        margin-top: -40px;
-    }
-    &__list{
-        @extend %marginbloc;
+.menu {
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  &__curve {
+    border-radius: 50px 50px 0 0;
+    padding-bottom: 2rem;
+    position: relative;
+    margin-top: -40px;
+  }
+  &__list {
+    @extend %marginbloc;
+    
+  }
+  &__restaurant {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__dish {
+    @include curvemargin(10px);
+    background-color: #fff;
+    padding-left: 0.5rem;
+    box-shadow: $shadow;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+    &:hover{
         
-    }
-    &__restaurant{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__dish{
-        @include curvemargin(10px);
-        background-color: #fff;
-        padding: 0 1rem 0 0.5rem;
-        box-shadow: $shadow;
-        position: relative;
-        animation: movedish 2s ease-in-out 200ms 1 normal both;
-        &:hover::after{
-            cursor: pointer;
-            content: "fas fa-check";
-            background-color: $thirdcolor;
-            position: absolute;
-        }
-        &--info{
-            display: flex;
-            justify-content: space-between;
+        .menu__content{
+            width: 90%;
+            animation: checkmenu 3s ease-in-out;
         }
     }
-    &__category{
-        border-bottom: 2px solid green;
-        width: 10%;
+
+    &--price {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-weight: bold;
+      margin: 0;
     }
+  }
+  &__category {
+    border-bottom: 2px solid green;
+    width: 10%;
+  }
+  &__icon {
+    border-radius: 0 15px 15px 0;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    background: $thirdcolor;
+    position: absolute;
+    display: flex;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    
+  }
+  &__content{
+      width: 100%;
+      position: relative;
+    
+  }
 }

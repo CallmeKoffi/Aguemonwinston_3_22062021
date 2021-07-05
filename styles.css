@@ -92,14 +92,27 @@ a {
           box-shadow: 0px 5px 5px #333333;
 }
 
-.btn__save:hover {
+.btn__save .fas {
+  color: #d480d4;
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.btn__save .far {
+  position: absolute;
+}
+
+.btn__save:hover .fas {
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: initial;
-  opacity: 1;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .logo__head {
@@ -111,7 +124,7 @@ a {
 .logo__footer {
   width: 6rem;
   margin-left: 1.5rem;
-  color: #fff;
+  fill: #fff;
 }
 
 img.imagecard__welcome {
@@ -199,11 +212,11 @@ i.far ::before, .fa-heart ::before {
   }
 }
 
-@-webkit-keyframes movedish {
+@-webkit-keyframes menutranslateY {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translatey(40px);
+            transform: translatey(40px);
   }
   100% {
     opacity: 1;
@@ -212,25 +225,45 @@ i.far ::before, .fa-heart ::before {
   }
 }
 
-@keyframes movedish {
+@keyframes menutranslateY {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translatey(40px);
+            transform: translatey(40px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes checkmenu {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@keyframes checkmenu {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
 }
 
 .loader {
   border-radius: 50%;
   border-top: 16px solid #9356DC;
-  border-right: 16px solid #FF79DA;
-  border-bottom: 16px solid #99E2D0;
-  border-left: 16px solid black;
+  border-bottom: 16px solid #FF79DA;
   width: 200px;
   height: 200px;
   -webkit-animation: animspin 2s linear;
@@ -354,9 +387,8 @@ section .card__restaurant--info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -366,32 +398,68 @@ section .card__restaurant--info {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   background-color: #fff;
-  padding: 0 1rem 0 0.5rem;
+  padding-left: 0.5rem;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   position: relative;
-  -webkit-animation: movedish 2s ease-in-out 200ms 1 normal both;
-          animation: movedish 2s ease-in-out 200ms 1 normal both;
-}
-
-.menu__dish:hover::after {
-  cursor: pointer;
-  content: "fas fa-check";
-  background-color: #99E2D0;
-  position: absolute;
-}
-
-.menu__dish--info {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+          animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+}
+
+.menu__dish:hover .menu__content {
+  width: 90%;
+  -webkit-animation: checkmenu 3s ease-in-out;
+          animation: checkmenu 3s ease-in-out;
+}
+
+.menu__dish--price {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .menu__category {
   border-bottom: 2px solid green;
   width: 10%;
+}
+
+.menu__icon {
+  border-radius: 0 15px 15px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #99E2D0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  top: 0;
+}
+
+.menu__content {
+  width: 100%;
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */
