@@ -26,11 +26,17 @@
     padding-left: 0.5rem;
     box-shadow: $shadow;
     position: relative;
-    
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+    &:hover{
+         .menu__icon, .menu__price{
+          animation: menucontent 200ms cubic-bezier(1,-0.3,0,1.05) 1 normal both;
+         }
+         
+    }
     
   }
   &__category {
@@ -45,11 +51,12 @@
     background: $thirdcolor;
     position: absolute;
     display: flex;
-    right: -50px;
-    width: 50px;
+    right: -70px;
+    width: 70px;
     height: 100%;
     top: 0;
-    
+    transition-duration: 500ms;
+    transition-delay: 5ms;
   }
   &__content{
       width: 100%;
