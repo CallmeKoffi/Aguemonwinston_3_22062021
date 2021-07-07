@@ -49,6 +49,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .btn__welcome {
@@ -416,20 +417,6 @@ section .card__restaurant--info {
           animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
 }
 
-.menu__dish:hover .menu__content {
-  width: 90%;
-  -webkit-animation: checkmenu 3s ease-in-out;
-          animation: checkmenu 3s ease-in-out;
-}
-
-.menu__dish--price {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-weight: bold;
-  margin: 0;
-}
-
 .menu__category {
   border-bottom: 2px solid green;
   width: 10%;
@@ -453,7 +440,7 @@ section .card__restaurant--info {
   display: -ms-flexbox;
   display: flex;
   right: -50px;
-  width: 100px;
+  width: 50px;
   height: 100px;
   top: 0;
 }
@@ -461,5 +448,13 @@ section .card__restaurant--info {
 .menu__content {
   width: 100%;
   position: relative;
+}
+
+.menu__price {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-weight: bold;
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

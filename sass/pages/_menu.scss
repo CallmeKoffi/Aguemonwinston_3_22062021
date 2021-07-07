@@ -3,17 +3,19 @@
     display: flex;
     align-items: center;
   }
+  
+  &__list {
+    @extend %marginbloc;
+    
+  }
   &__curve {
     border-radius: 50px 50px 0 0;
     padding-bottom: 2rem;
     position: relative;
     margin-top: -40px;
-  }
-  &__list {
-    @extend %marginbloc;
     
   }
-  &__restaurant {
+  &__restaurant{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,21 +31,7 @@
     justify-content: space-between;
     align-items: center;
     animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
-    &:hover{
-        
-        .menu__content{
-            width: 90%;
-            animation: checkmenu 3s ease-in-out;
-        }
-    }
-
-    &--price {
-      position: absolute;
-      right: 20px;
-      top: 10px;
-      font-weight: bold;
-      margin: 0;
-    }
+    
   }
   &__category {
     border-bottom: 2px solid green;
@@ -58,7 +46,7 @@
     position: absolute;
     display: flex;
     right: -50px;
-    width: 100px;
+    width: 50px;
     height: 100px;
     top: 0;
     
@@ -66,6 +54,12 @@
   &__content{
       width: 100%;
       position: relative;
-    
+  }
+  &__price {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: bold;
+    margin: 0;
   }
 }
