@@ -163,6 +163,8 @@ i.fas.fa-check-circle::before {
   color: #fff;
   font-size: 1.5rem;
   padding-left: 20px;
+  -webkit-animation: spincheck 300ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 5 normal both;
+          animation: spincheck 300ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 5 normal both;
 }
 
 i.far, .fa-heart {
@@ -264,6 +266,28 @@ i.far ::before, .fa-heart ::before {
   100% {
     -webkit-transform: translateX(-70px);
             transform: translateX(-70px);
+  }
+}
+
+@-webkit-keyframes spincheck {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spincheck {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -402,7 +426,7 @@ section .card__restaurant--info {
 }
 
 .menu__dish {
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 1.5rem;
   background-color: #fff;
   padding-left: 0.5rem;
@@ -424,8 +448,8 @@ section .card__restaurant--info {
 }
 
 .menu__dish:hover .menu__icon, .menu__dish:hover .menu__price {
-  -webkit-animation: menucontent 200ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
-          animation: menucontent 200ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
+  -webkit-animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
+          animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
 }
 
 .menu__category {

@@ -14,6 +14,7 @@ i.fas{
       color: #fff;
       font-size: 1.5rem;
       padding-left: 20px;
+      animation: spincheck 300ms cubic-bezier(.68,.05,1,.71) 100ms 5 normal both;
    }
 }
 i.far , .fa-heart{

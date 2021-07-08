@@ -21,7 +21,7 @@
     align-items: center;
   }
   &__dish {
-    @include curvemargin(10px);
+    @include curvemargin(15px);
     background-color: #fff;
     padding-left: 0.5rem;
     box-shadow: $shadow;
@@ -33,7 +33,7 @@
     animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
     &:hover{
          .menu__icon, .menu__price{
-          animation: menucontent 200ms cubic-bezier(1,-0.3,0,1.05) 1 normal both;
+          animation: menucontent 800ms cubic-bezier(1,-0.3,0,1.05) 1 normal both;
          }
          
     }
