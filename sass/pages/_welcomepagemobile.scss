@@ -40,10 +40,6 @@ section {
     background-color: #fff;
   }
   
-}
-
-section{
-
   .functionality {
     @extend %marginbloc;
     & span {

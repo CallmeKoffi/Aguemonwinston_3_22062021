@@ -1,0 +1,30 @@
+@media all and (min-width:500px) and (max-width:900px){
+
+    .loader{
+        border-top: 50px solid $primarycolor;
+        border-bottom: 50px solid $secondcolor;
+    }
+    section{
+        .functionality{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__instruction{
+                width: 50%;
+                text-align: center;
+            }
+
+        }
+        .card{
+            &__bloc1 , &__bloc2{
+                display: flex;
+                justify-content: space-around;
+            }
+            &__restaurant{
+                width: 100%;
+            }
+        }
+    }
+
+}
+

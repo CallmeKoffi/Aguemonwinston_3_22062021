@@ -19,6 +19,12 @@ footer {
   color: #fff;
 }
 
+@media all and (min-width: 500px) and (max-width: 900px) {
+  footer {
+    text-align: center;
+  }
+}
+
 footer ul {
   list-style: none;
   padding-left: 1.5rem;
@@ -42,9 +48,22 @@ h2#titlemain {
   margin-left: 1rem;
 }
 
+@media all and (min-width: 500px) and (max-width: 900px) {
+  h2#titlemain {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
 h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
+}
+
+@media all and (min-width: 500px) and (max-width: 900px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 
 h4 {
@@ -72,6 +91,21 @@ a {
           box-shadow: 0px 5px 5px black;
 }
 
+@media all and (min-width: 500px) and (max-width: 900px) {
+  .btn__welcome {
+    border-radius: 50px;
+    background-color: #FF79DA;
+    padding: 1rem 1.2rem;
+    border: none;
+    color: #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 40%;
+    -webkit-box-shadow: 0px 5px 5px black;
+            box-shadow: 0px 5px 5px black;
+  }
+}
+
 .btn__welcome:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 5px 5px #333333;
@@ -92,6 +126,21 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media all and (min-width: 500px) and (max-width: 900px) {
+  .btn__menu {
+    border-radius: 50px;
+    background-color: #FF79DA;
+    padding: 1rem 1.2rem;
+    border: none;
+    color: #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 30%;
+    -webkit-box-shadow: 0px 5px 5px black;
+            box-shadow: 0px 5px 5px black;
+  }
 }
 
 .btn__menu:hover {
@@ -510,5 +559,38 @@ section .card__restaurant--info {
   bottom: 10px;
   font-weight: bold;
   margin: 0;
+}
+
+@media all and (min-width: 500px) and (max-width: 900px) {
+  .loader {
+    border-top: 50px solid #9356DC;
+    border-bottom: 50px solid #FF79DA;
+  }
+  section .functionality {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .functionality__instruction {
+    width: 50%;
+    text-align: center;
+  }
+  section .card__bloc1, section .card__bloc2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section .card__restaurant {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,9 @@
 .btn{
     &__welcome{
         @include button();
+        @media all and (min-width:500px) and (max-width:900px) {
+            @include button(40%)
+        }
         &:hover{
             cursor: pointer;
             box-shadow: 0px 5px 5px lighten(black, 20%);
@@ -10,6 +13,9 @@
     &__menu{
         @include button(50%);
         @include logohead;
+        @media all and (min-width:500px) and (max-width:900px) {
+          @include button(30%);
+        }
         &:hover{
             cursor: pointer;
             box-shadow: 0px 5px 5px lighten(black, 20%);
