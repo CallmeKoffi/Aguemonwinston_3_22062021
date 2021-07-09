@@ -227,6 +227,12 @@ i.far, .fa-heart {
   font-size: 1.5rem;
 }
 
+@media all and (min-width: 500px) and (max-width: 900px) {
+  i.far, .fa-heart {
+    font-size: 2rem;
+  }
+}
+
 i.far ::before, .fa-heart ::before {
   position: absolute;
   right: 10px;
@@ -591,6 +597,20 @@ section .card__restaurant--info {
   }
   section .card__restaurant {
     width: 100%;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 900px) {
+  .menu__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .menu__category {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
