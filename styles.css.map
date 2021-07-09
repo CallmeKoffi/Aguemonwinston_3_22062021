@@ -11,8 +11,12 @@
         "sass/components/_images.scss",
         "sass/components/_icons.scss",
         "sass/utils/_keyframes.scss",
-        "sass/pages/_welcomepage.scss",
-        "sass/pages/_menu.scss"
+        "sass/pages/_welcomepagemobile.scss",
+        "sass/pages/_menumobile.scss",
+        "sass/pages/_welcomepagetab.scss",
+        "sass/pages/_menutab.scss",
+        "sass/pages/_welcomepagedesktop.scss",
+        "sass/pages/_menudesktop.scss"
     ],
     "names": [],
     "file": "styles.css"
