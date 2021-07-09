@@ -38,6 +38,10 @@ h1, h2, h4, p, li {
   font-family: "Roboto", sans-serif;
 }
 
+h2#titlemain {
+  margin-left: 1rem;
+}
+
 h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
@@ -371,10 +375,6 @@ section .functionality__instruction .number {
 
 section .functionality__instruction.active {
   background-color: #f2eafb;
-}
-
-section .main h2 {
-  padding-left: 1.5rem;
 }
 
 section .card {
