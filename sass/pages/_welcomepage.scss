@@ -80,6 +80,7 @@ section{
         position: absolute;
         top: 1rem;
         right: 1rem;
+        text-align: center;
     }    
     &__restaurant {
       @include curvemargin();

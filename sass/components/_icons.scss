@@ -7,14 +7,17 @@ i.fas{
 
    }  
    &.fa-arrow-left{
-      margin-left: 1rem;
+      margin-left: 2rem;
       padding-right: 0;
    }
-   &.fa-check-circle::before{
+   &.fa-check-circle{
       color: #fff;
       font-size: 1.5rem;
-      padding-left: 20px;
-      animation: spincheck 300ms cubic-bezier(.68,.05,1,.71) 100ms 5 normal both;
+      padding-left: 20px;     
+      transition: 2s;
+      
+      
+      
    }
 }
 i.far , .fa-heart{

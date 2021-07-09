@@ -30,6 +30,10 @@ footer ul li {
   font-weight: bold;
 }
 
+footer a.mail {
+  color: #fff;
+}
+
 h1, h2, h4, p, li {
   font-family: "Roboto", sans-serif;
 }
@@ -49,7 +53,6 @@ p {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 .btn__welcome {
@@ -155,16 +158,16 @@ i.fas.fa-store::before {
 }
 
 i.fas.fa-arrow-left {
-  margin-left: 1rem;
+  margin-left: 2rem;
   padding-right: 0;
 }
 
-i.fas.fa-check-circle::before {
+i.fas.fa-check-circle {
   color: #fff;
   font-size: 1.5rem;
   padding-left: 20px;
-  -webkit-animation: spincheck 300ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 5 normal both;
-          animation: spincheck 300ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 5 normal both;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 i.far, .fa-heart {
@@ -275,8 +278,8 @@ i.far ::before, .fa-heart ::before {
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
   }
 }
 
@@ -286,8 +289,8 @@ i.far ::before, .fa-heart ::before {
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
   }
 }
 
@@ -375,6 +378,7 @@ section .card .card__new {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  text-align: center;
 }
 
 section .card__restaurant {
@@ -450,6 +454,11 @@ section .card__restaurant--info {
 .menu__dish:hover .menu__icon, .menu__dish:hover .menu__price {
   -webkit-animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
           animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
+}
+
+.menu__dish:hover .menu__icon .fa-check-circle, .menu__dish:hover .menu__price .fa-check-circle {
+  -webkit-animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
+          animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
 }
 
 .menu__category {
