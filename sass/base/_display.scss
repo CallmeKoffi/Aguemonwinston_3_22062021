@@ -16,7 +16,7 @@ footer{
   background-color: #353535;
   padding-top: 1rem;
   color: #fff;
-  @media all and (min-width:500px) and (max-width:900px){
+  @media all and (min-width:500px) {
     text-align: center;
   }
   ul{
@@ -39,7 +39,7 @@ h1 ,h2 ,h4 ,p ,li {
 }
 h2#titlemain{
   margin-left: 1rem;
-  @media all and (min-width:500px) and (max-width:900px) {
+  @media all and (min-width:500px)  {
      text-align: center;
      font-size: 2rem;
   }
@@ -50,7 +50,7 @@ h2#titlemain{
 h3{
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
-  @media all and (min-width:500px) and (max-width:900px){
+  @media all and (min-width:500px){
     font-size: 2.5rem;
   }
 }

@@ -4,6 +4,9 @@
         @media all and (min-width:500px) and (max-width:900px) {
             @include button(40%)
         }
+        @media all and (min-width:901px){
+            @include button(20%)
+        }
         &:hover{
             cursor: pointer;
             box-shadow: 0px 5px 5px lighten(black, 20%);
