@@ -22,7 +22,7 @@ i.fas{
 }
 i.far , .fa-heart{
    font-size: 1.5rem;
-   @media all and (min-width:500px) and (max-width:900px){
+   @media all and (min-width:500px) {
       font-size: 2rem;
    }
    ::before{
