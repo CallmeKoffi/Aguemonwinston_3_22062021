@@ -5,5 +5,5 @@
 
 .logo__footer{
     @include logofooter;
-    fill: #fff;
+    filter: invert(1);
 }

@@ -196,7 +196,8 @@ a {
 .logo__footer {
   width: 6rem;
   margin-left: 1.5rem;
-  fill: #fff;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 img.imagecard__welcome {
