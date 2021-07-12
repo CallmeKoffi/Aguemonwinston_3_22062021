@@ -3,8 +3,8 @@
     margin-left: auto;
     margin-right: auto;
 }
-@mixin logofooter {
-    width: 6rem;
+@mixin logofooter ($widht:6rem) {
+    width: $widht;
     margin-left: 1.5rem;
 
 }

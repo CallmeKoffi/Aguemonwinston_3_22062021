@@ -1,9 +1,15 @@
 
 .logo__head{
     @include logohead;
+    @media all and (min-width:500px){
+        width: 20rem;
+    }
 }
 
 .logo__footer{
-    @include logofooter;
+    @include logofooter();
     filter: invert(1);
+    @media all and (min-width:500px){
+        @include logofooter(10rem);
+    }
 }
