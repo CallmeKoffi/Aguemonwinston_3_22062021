@@ -586,7 +586,7 @@ section .card__restaurant--info {
 }
 
 .menu .menu__dish .menu__content {
-  max-width: 500px;
+  width: 500px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,6 +692,9 @@ section .card__restaurant--info {
   }
   .menu .menu__dish .menu__content--details {
     width: 100%;
+  }
+  .menu .menu__dish:hover {
+    max-width: 400px;
   }
 }
 
