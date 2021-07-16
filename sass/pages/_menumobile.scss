@@ -1,26 +1,25 @@
 .menu {
-  &__header {
-    display: flex;
-    align-items: center;
-  }
-  
-  &__list {
-    @extend %marginbloc;
-    
-  }
-  &__curve {
     border-radius: 50px 50px 0 0;
     padding-bottom: 2rem;
     position: relative;
     margin-top: -40px;
     
+    .menu__header {
+    display: flex;
+    align-items: center;
+    }
+
+    .menu__list {
+    @extend %marginbloc;
+    
   }
-  &__restaurant{
+  
+  .menu__restaurant{
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  &__dish {
+  .menu__dish {
     @include curvemargin(15px);
     background-color: #fff;
     padding-left: 0.5rem;
@@ -31,8 +30,54 @@
     justify-content: space-between;
     align-items: center;
     animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+    .menu__icon {
+      border-radius: 0 15px 15px 0;
+      justify-content: center;
+    
+      align-items: center;
+      background: $thirdcolor;
+      position: absolute;
+      display: flex;
+      right: -70px;
+      width: 70px;
+      height: 100%;
+      top: 0;
+      
+  
+    }
+    .menu__content{
+      max-width: 500px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      .menu__content--detail{
+        max-width: 500px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      
+      .menu__content--price{
+         display: flex;
+         align-items: flex-end;
+         font-weight: bold;
+         padding-right: 5px;
+      }
+  }
+  .menu__price {      
+    font-weight: bold;
+    margin: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
     &:hover{
-         .menu__icon, .menu__price{
+      .menu__content--detail{
+
+        max-width: 200px;
+        transition: all 400ms ease ;
+      }
+      .menu__icon, .menu__price{
           animation: menucontent 800ms cubic-bezier(1,-0.3,0,1.05) 1 normal both;
           .fa-check-circle{
             animation: spincheck 1500ms cubic-bezier(.68,.05,1,.71) 100ms 1 normal both;
@@ -42,35 +87,10 @@
     }
     
   }
-  &__category {
+  .menu__category {
     border-bottom: 2px solid green;
     width: 10%;
   }
-  &__icon {
-    border-radius: 0 15px 15px 0;
-    justify-content: center;
-    
-    align-items: center;
-    background: $thirdcolor;
-    position: absolute;
-    display: flex;
-    right: -70px;
-    width: 70px;
-    height: 100%;
-    top: 0;
-    transition-duration: 500ms;
-    transition-delay: 5ms;
-
-  }
-  &__content{
-      width: 100%;
-      position: relative;
-  }
-  &__price {
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-    font-weight: bold;
-    margin: 0;
-  }
+  
+  
 }

@@ -1,11 +1,23 @@
 @media all and (min-width:500px) and (max-width:900px){
   .menu{
-      &__restaurant{
+      .menu__restaurant{
           display: flex;
           justify-content: space-evenly;
       }
-      &__category{
+      .menu__category{
           font-size: 1.5rem;
+      }
+      .menu__dish{
+        .menu__content{
+            width: 100%;
+            &--details{
+                width: 100%;
+            }
+        }
+        &:hover{
+            
+        }
+        
       }
   }  
 }

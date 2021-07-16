@@ -1,4 +1,4 @@
-section .functionality, section .card, .menu__list {
+section .functionality, section .card, .menu .menu__list {
   margin: 2rem 1rem 0 1rem;
 }
 
@@ -517,7 +517,14 @@ section .card__restaurant--info {
   padding: 0 1rem;
 }
 
-.menu__header {
+.menu {
+  border-radius: 50px 50px 0 0;
+  padding-bottom: 2rem;
+  position: relative;
+  margin-top: -40px;
+}
+
+.menu .menu__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,14 +533,7 @@ section .card__restaurant--info {
           align-items: center;
 }
 
-.menu__curve {
-  border-radius: 50px 50px 0 0;
-  padding-bottom: 2rem;
-  position: relative;
-  margin-top: -40px;
-}
-
-.menu__restaurant {
+.menu .menu__restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,7 +544,7 @@ section .card__restaurant--info {
           align-items: center;
 }
 
-.menu__dish {
+.menu .menu__dish {
   border-radius: 15px;
   margin-bottom: 1.5rem;
   background-color: #fff;
@@ -566,22 +566,7 @@ section .card__restaurant--info {
           animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
 }
 
-.menu__dish:hover .menu__icon, .menu__dish:hover .menu__price {
-  -webkit-animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
-          animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
-}
-
-.menu__dish:hover .menu__icon .fa-check-circle, .menu__dish:hover .menu__price .fa-check-circle {
-  -webkit-animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
-          animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
-}
-
-.menu__category {
-  border-bottom: 2px solid green;
-  width: 10%;
-}
-
-.menu__icon {
+.menu .menu__dish .menu__icon {
   border-radius: 0 15px 15px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -598,23 +583,63 @@ section .card__restaurant--info {
   width: 70px;
   height: 100%;
   top: 0;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-delay: 5ms;
-          transition-delay: 5ms;
 }
 
-.menu__content {
-  width: 100%;
+.menu .menu__dish .menu__content {
+  max-width: 500px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.menu__price {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+.menu .menu__dish .menu__content .menu__content--detail {
+  max-width: 500px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu .menu__dish .menu__content .menu__content--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.menu .menu__dish .menu__price {
   font-weight: bold;
   margin: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.menu .menu__dish:hover .menu__content--detail {
+  max-width: 200px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.menu .menu__dish:hover .menu__icon, .menu .menu__dish:hover .menu__price {
+  -webkit-animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
+          animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
+}
+
+.menu .menu__dish:hover .menu__icon .fa-check-circle, .menu .menu__dish:hover .menu__price .fa-check-circle {
+  -webkit-animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
+          animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
+}
+
+.menu .menu__category {
+  border-bottom: 2px solid green;
+  width: 10%;
 }
 
 @media all and (min-width: 500px) {
@@ -651,7 +676,7 @@ section .card__restaurant--info {
 }
 
 @media all and (min-width: 500px) and (max-width: 900px) {
-  .menu__restaurant {
+  .menu .menu__restaurant {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -659,8 +684,14 @@ section .card__restaurant--info {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .menu__category {
+  .menu .menu__category {
     font-size: 1.5rem;
+  }
+  .menu .menu__dish .menu__content {
+    width: 100%;
+  }
+  .menu .menu__dish .menu__content--details {
+    width: 100%;
   }
 }
 
