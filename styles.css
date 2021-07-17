@@ -696,6 +696,9 @@ section .card__restaurant--info {
   .menu .menu__dish:hover {
     max-width: 400px;
   }
+  .menu .menu__dish:hover .menu__content--detail {
+    max-width: 400px;
+  }
 }
 
 @media all and (min-width: 901px) {
@@ -718,8 +721,21 @@ section .card__restaurant--info {
         -ms-flex-align: center;
             align-items: center;
   }
-  .menu__dish {
+  .menu .menu__dish {
     width: 60%;
+  }
+  .menu .menu__dish .menu__content {
+    width: 100%;
+    padding: O 5px;
+  }
+  .menu .menu__dish .menu__content--details {
+    width: 100%;
+  }
+  .menu .menu__dish:hover {
+    width: 60%;
+  }
+  .menu .menu__dish:hover .menu__content--detail {
+    max-width: 400px;
   }
   .menu__category {
     font-size: 2rem;

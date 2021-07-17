@@ -5,8 +5,22 @@
             flex-direction: column;
             align-items: center;
         }
-        &__dish{
+        .menu__dish{
             width: 60%;
+            .menu__content{
+                width: 100%;
+                padding: O 5px;
+                &--details{
+                    width: 100%;
+                }
+            }
+            &:hover{
+                width: 60%;
+                .menu__content--detail{
+                    max-width: 400px;
+                }
+            }
+            
         }
         &__category{
             font-size: 2rem;

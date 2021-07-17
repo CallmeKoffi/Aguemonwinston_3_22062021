@@ -16,6 +16,9 @@
         }
         &:hover{
             max-width: 400px;
+            .menu__content--detail{
+                max-width: 400px;
+            }
         }
         
       }
