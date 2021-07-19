@@ -627,12 +627,12 @@ section .card__restaurant--info {
   transition: all 400ms ease;
 }
 
-.menu .menu__dish:hover .menu__icon, .menu .menu__dish:hover .menu__price {
+.menu .menu__dish:hover .menu__icon, .menu .menu__dish:hover .menu__content--price {
   -webkit-animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
           animation: menucontent 800ms cubic-bezier(1, -0.3, 0, 1.05) 1 normal both;
 }
 
-.menu .menu__dish:hover .menu__icon .fa-check-circle, .menu .menu__dish:hover .menu__price .fa-check-circle {
+.menu .menu__dish:hover .menu__icon .fa-check-circle, .menu .menu__dish:hover .menu__content--price .fa-check-circle {
   -webkit-animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
           animation: spincheck 1500ms cubic-bezier(0.68, 0.05, 1, 0.71) 100ms 1 normal both;
 }

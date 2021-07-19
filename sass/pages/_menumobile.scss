@@ -77,7 +77,7 @@
         max-width: 200px;
         transition: all 400ms ease ;
       }
-      .menu__icon, .menu__price{
+      .menu__icon, .menu__content--price{
           animation: menucontent 800ms cubic-bezier(1,-0.3,0,1.05) 1 normal both;
           .fa-check-circle{
             animation: spincheck 1500ms cubic-bezier(.68,.05,1,.71) 100ms 1 normal both;
