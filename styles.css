@@ -519,20 +519,20 @@ section .card__restaurant--info {
   padding: 0 1rem;
 }
 
-.menu {
-  border-radius: 50px 50px 0 0;
-  padding-bottom: 2rem;
-  position: relative;
-  margin-top: -40px;
-}
-
-.menu .menu__header {
+.menu__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu {
+  border-radius: 50px 50px 0 0;
+  padding-bottom: 2rem;
+  position: relative;
+  margin-top: -40px;
 }
 
 .menu .menu__restaurant {
@@ -701,18 +701,8 @@ section .card__restaurant--info {
   .menu .menu__dish {
     width: 60%;
   }
-  .menu .menu__dish .menu__content {
-    width: 100%;
-    padding: O 5px;
-  }
-  .menu .menu__dish .menu__content--details {
-    width: 100%;
-  }
-  .menu .menu__dish:hover {
-    width: 60%;
-  }
-  .menu .menu__dish:hover .menu__content--detail {
-    max-width: 400px;
+  .menu .menu__dish:hover .title, .menu .menu__dish:hover .text {
+    width: 1000px;
   }
   .menu__category {
     font-size: 2rem;

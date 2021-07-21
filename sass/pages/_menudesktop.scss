@@ -6,18 +6,10 @@
             align-items: center;
         }
         .menu__dish{
-            width: 60%;
-            .menu__content{
-                width: 100%;
-                padding: O 5px;
-                &--details{
-                    width: 100%;
-                }
-            }
+            width: 60%;   
             &:hover{
-                width: 60%;
-                .menu__content--detail{
-                    max-width: 400px;
+                .title, .text{
+                  width: 1000px;
                 }
             }
             
