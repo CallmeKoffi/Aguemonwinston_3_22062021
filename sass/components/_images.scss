@@ -1,5 +1,6 @@
 img.imagecard{
     &__welcome{
+        object-fit: cover;
         @include imagecard (100%, 12rem);
         @media all and (min-width:500px){
             @include imagecard (100%, 14rem);
@@ -7,6 +8,7 @@ img.imagecard{
         }
 }
     &__menu{
+        object-fit: cover;
         @include imagecard (100%, 16rem);
         border-radius: 0;
         margin-top: 1rem;

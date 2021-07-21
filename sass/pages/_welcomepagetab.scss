@@ -15,11 +15,12 @@
             }
 
         }
+        &.main{
+            padding: 10px 100px;
+        }
         .card{
-            &__bloc1 , &__bloc2{
-                display: flex;
-                justify-content: space-around;
-            }
+            display: flex;
+            align-items: center;
             &__restaurant{
                 width: 100%;
             }
