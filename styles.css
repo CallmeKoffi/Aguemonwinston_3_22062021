@@ -560,7 +560,7 @@ section .card__restaurant--info {
 }
 
 .menu .menu__dish .text, .menu .menu__dish .title {
-  width: 250px;
+  width: 270px;
   font-size: 13px;
 }
 
@@ -570,7 +570,7 @@ section .card__restaurant--info {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 150px;
+  width: 200px;
 }
 
 .menu .menu__dish:hover .menu__icon, .menu .menu__dish:hover .menu__price {

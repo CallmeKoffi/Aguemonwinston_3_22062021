@@ -28,7 +28,7 @@
     overflow: hidden;
     animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
     & .text , .title{
-        width: 250px;
+        width: 270px;
         font-size: 13px;
     }
     &:hover{
@@ -38,7 +38,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: 150px;
+        width: 200px;
       }
       .menu__icon, .menu__price{
           animation: menucontent 800ms cubic-bezier(1,-0.3,0,1.05) 1 normal both;
