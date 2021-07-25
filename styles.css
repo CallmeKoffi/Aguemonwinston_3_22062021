@@ -414,8 +414,8 @@ i.far ::before, .fa-heart ::before {
   -webkit-animation: animspin 2s linear;
   animation: animspin 2s linear;
   position: fixed;
-  -webkit-animation-duration: 2300ms;
-          animation-duration: 2300ms;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
   pointer-events: none;
   opacity: 0;
   content: "";
