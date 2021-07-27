@@ -557,6 +557,7 @@ section .card__restaurant--info {
   overflow: hidden;
   -webkit-animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
           animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+  cursor: pointer;
 }
 
 .menu .menu__dish .text, .menu .menu__dish .title {

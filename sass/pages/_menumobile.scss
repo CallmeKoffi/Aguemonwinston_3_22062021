@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   }
-  
+
 .menu {
     border-radius: 50px 50px 0 0;
     padding-bottom: 2rem;
@@ -27,6 +27,7 @@
     position: relative;
     overflow: hidden;
     animation: menutranslateY 2s ease-in-out 200ms 1 normal both;
+    cursor: pointer;
     & .text , .title{
         width: 270px;
         font-size: 13px;
